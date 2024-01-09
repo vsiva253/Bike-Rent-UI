@@ -39,14 +39,14 @@ class CategoryCards extends StatelessWidget {
   Widget _buildCard(String title, Color color, String img) {
     return SizedBox(
       height: 72,
-      width: 155, // Updated width to 155px
+      // width: 155, // Updated width to 155px
       child: Card(
         color: color,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(8.0), // Added border-radius: 8px
         ),
         child: Padding(
-          padding: EdgeInsets.fromLTRB(8.0, 8.0, 2.0, 2.0), // Modified padding
+          padding: EdgeInsets.fromLTRB(8.0, 8.0, 0.0, 2.0), // Modified padding
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [

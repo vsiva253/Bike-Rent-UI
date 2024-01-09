@@ -35,12 +35,16 @@ class Homepage extends StatelessWidget {
           // Handle tab item taps
         },
       ),
-      appBar: CustomAppBar(),
+      appBar: PreferredSize(
+          preferredSize: Size(double.infinity, 60), child: CustomAppBar()),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(left: 16, right: 16),
           child: Column(
             children: [
+              SizedBox(
+                height: 20,
+              ),
               CategoryCards(),
               Align(
                 alignment: Alignment.topLeft,
